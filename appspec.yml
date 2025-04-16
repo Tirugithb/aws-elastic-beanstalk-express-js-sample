@@ -1,0 +1,9 @@
+version: 0.0
+os: linux
+files:
+  - source: /path/to/source
+    destination: /path/to/destination
+hooks:
+  AfterInstall:
+    - location: scripts/after_install.sh
+      timeout: 180
